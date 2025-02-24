@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/buttons" />
+    <link rel="stylesheet" type="text/css" href="/css/game" />
+    <title>Game - TicTacToe Online</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <div onclick="navigator.clipboard.writeText(gameId)">
+        <p id="game-id"></p>
+      </div>
+
+      <div class="players">
+        <p id="player-x">Player X: None</p>
+        <p id="player-o">Player O: None</p>
+        <p>You are: <b id="player-indicator">N/A</b></p>
+      </div>
+
+      <p class="title" id="title"></p>
+      
+      <div class="line" id="line"></div>
+
+      <table>
+        <tbody>
+          <tr>
+            <td id="0-0" onclick="place(0, 0)"></td>
+            <td id="1-0" onclick="place(1, 0)"></td>
+            <td id="2-0" onclick="place(2, 0)"></td>
+          </tr>
+          <tr>
+            <td id="0-1" onclick="place(0, 1)"></td>
+            <td id="1-1" onclick="place(1, 1)"></td>
+            <td id="2-1" onclick="place(2, 1)"></td>
+          </tr>
+          <tr>
+            <td id="0-2" onclick="place(0, 2)"></td>
+            <td id="1-2" onclick="place(1, 2)"></td>
+            <td id="2-2" onclick="place(2, 2)"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="button-wrapper">
+        <button class="btn-danger" onclick="window.location='/'">Leave</button>
+
+        <button class="btn-unavailable" id="new-game">New Game</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+    <script src="../javascript/game"></script>
+  </body>
+</html>

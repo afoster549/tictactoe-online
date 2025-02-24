@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/main">
+    <link rel="stylesheet" type="text/css" href="/css/buttons">
+    <link rel="stylesheet" type="text/css" href="/css/textbox">
+    <title>Join Game - TicTacToe Online</title>
+</head>
+<body>
+    <p>Join Game</p>
+
+    <input class="textbox" type="text" id="game-id" placeholder="Game ID" maxlength="6">
+
+    <br>
+    <br>
+    
+    <button class="btn-unavailable" id="join-btn">Join Game</button>
+
+    <br>
+    <br>
+
+    <button class="btn-regular" id="join-random-btn">Join Random</button>
+    
+    <br>
+    <br>
+
+    <button class="btn-hollow" onclick="window.location = '/create'">Create Game</button>
+
+    <script src="../javascript/join"></script>
+</body>
+</html>

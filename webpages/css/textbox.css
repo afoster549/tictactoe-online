@@ -1,0 +1,13 @@
+.textbox {
+    width: 200px;
+    height: 32px;
+
+    padding: 0 8px;
+
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    background-color: #fff;
+
+    user-select: none;
+}

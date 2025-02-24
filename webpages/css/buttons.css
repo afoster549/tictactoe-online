@@ -1,0 +1,76 @@
+:root {
+    --button-blue: #10a1d5;
+}
+
+button {
+    color: white;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 6px 12px;
+
+    text-align: center;
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease 0s;
+}
+
+.btn-regular {
+    background: var(--button-blue);
+
+    user-select: none;
+}
+
+.btn-regular:hover {
+    filter: brightness(115%);
+}
+
+.btn-regular:active {
+    filter: brightness(90%);
+}
+
+.btn-hollow {
+    background: #00000000;
+    color: var(--button-blue);
+    border: solid 1px var(--button-blue);
+
+    user-select: none;
+}
+
+.btn-hollow:hover {
+    background: var(--button-blue);
+    color: white;
+    border-color: #00000000;
+    filter: brightness(125%);
+}
+
+.btn-hollow:active {
+    filter: brightness(90%);
+}
+
+.btn-danger {
+    background: #c80000;
+    user-select: none;
+}
+
+.btn-danger:hover {
+    filter: brightness(125%);
+}
+
+.btn-danger:active {
+    filter: brightness(90%);
+}
+
+.btn-unavailable {
+    background: #dcdcdc;
+    cursor: not-allowed;
+
+    user-select: none;
+}
